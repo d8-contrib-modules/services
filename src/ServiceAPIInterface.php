@@ -12,7 +12,7 @@ use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Provides an interface for defining Service api entities.
+ * Provides an interface for defining Service Endpoint entities.
  */
 interface ServiceAPIInterface extends ConfigEntityInterface {
 
@@ -29,7 +29,7 @@ interface ServiceAPIInterface extends ConfigEntityInterface {
   public function getServiceProvider();
 
   /**
-   * Processes the service API request.
+   * Processes the Service Endpoint request.
    * @return SerializationInterface
    */
   public function processRequest(Request $request);

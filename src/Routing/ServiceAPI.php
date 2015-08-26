@@ -15,7 +15,7 @@ class ServiceAPI {
    * {@inheritdoc}
    */
   public function routes() {
-    $apis = \Drupal::entityManager()->getStorage('service_api')->loadMultiple();
+    $apis = \Drupal::entityManager()->getStorage('service_endpoint')->loadMultiple();
 
     $routes = array();
 

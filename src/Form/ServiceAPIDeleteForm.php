@@ -12,7 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
 /**
- * Builds the form to delete Service api entities.
+ * Builds the form to delete Service Endpoint entities.
  */
 class ServiceAPIDeleteForm extends EntityConfirmFormBase {
   /**
@@ -26,7 +26,7 @@ class ServiceAPIDeleteForm extends EntityConfirmFormBase {
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.service_api.collection');
+    return new Url('entity.service_endpoint.collection');
   }
 
   /**
