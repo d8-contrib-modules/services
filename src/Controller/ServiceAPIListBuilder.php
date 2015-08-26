@@ -11,14 +11,14 @@ use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;
 
 /**
- * Provides a listing of Service api entities.
+ * Provides a listing of Service Endpoint entities.
  */
 class ServiceAPIListBuilder extends ConfigEntityListBuilder {
   /**
    * {@inheritdoc}
    */
   public function buildHeader() {
-    $header['label'] = $this->t('Service api');
+    $header['label'] = $this->t('Service Endpoint');
     $header['id'] = $this->t('Machine name');
     return $header + parent::buildHeader();
   }

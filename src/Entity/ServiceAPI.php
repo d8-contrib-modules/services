@@ -12,11 +12,11 @@ use Drupal\services\ServiceAPIInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Defines the Service api entity.
+ * Defines the Service Endpoint entity.
  *
  * @ConfigEntityType(
- *   id = "service_api",
- *   label = @Translation("Service api"),
+ *   id = "service_endpoint",
+ *   label = @Translation("Service Endpoint"),
  *   handlers = {
  *     "list_builder" = "Drupal\services\Controller\ServiceAPIListBuilder",
  *     "form" = {
@@ -25,7 +25,7 @@ use Symfony\Component\HttpFoundation\Request;
  *       "delete" = "Drupal\services\Form\ServiceAPIDeleteForm"
  *     }
  *   },
- *   config_prefix = "service_api",
+ *   config_prefix = "service_endpoint",
  *   admin_permission = "administer site configuration",
  *   entity_keys = {
  *     "id" = "id",
@@ -33,30 +33,30 @@ use Symfony\Component\HttpFoundation\Request;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "/admin/structure/service_api/{service_api}",
- *     "edit-form" = "/admin/structure/service_api/{service_api}/edit",
- *     "delete-form" = "/admin/structure/service_api/{service_api}/delete",
- *     "collection" = "/admin/structure/service_api"
+ *     "canonical" = "/admin/structure/service_endpoint/{service_endpoint}",
+ *     "edit-form" = "/admin/structure/service_endpoint/{service_endpoint}/edit",
+ *     "delete-form" = "/admin/structure/service_endpoint/{service_endpoint}/delete",
+ *     "collection" = "/admin/structure/service_endpoint"
  *   }
  * )
  */
 class ServiceAPI extends ConfigEntityBase implements ServiceAPIInterface {
   /**
-   * The Service api ID.
+   * The Service Endpoint ID.
    *
    * @var string
    */
   protected $id;
 
   /**
-   * The Service api label.
+   * The Service Endpoint label.
    *
    * @var string
    */
   protected $label;
 
   /**
-   * The Service api endpoint.
+   * The Service Endpoint endpoint.
    *
    * @var string
    */
