@@ -1,3 +1,0 @@
-manage services:
-  title: 'Manage services'
-  description: 'Allows configuring service endpoints.'
